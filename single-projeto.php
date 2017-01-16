@@ -8,11 +8,13 @@
               <?php
               $galeria = get_field('galeria');
               if(!empty($galeria)):
+                echo "<div class='galeria-single'>";
                 foreach ($galeria as $galImagem) {
                 ?>
                   <img src="<?php echo $galImagem['url'] ?>" alt="<?php echo $galImagem['alt'] ?>" class="img-responsive">
                 <?php
                 }
+                echo "</div>";
               else:
                 the_post_thumbnail( 'high', array( 'class' => 'img-responsive' ) );
               endif;

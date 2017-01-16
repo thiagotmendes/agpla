@@ -9,6 +9,7 @@ function custom_theme_scripts() {
 	wp_enqueue_script( 'Bootstrap', get_template_directory_uri() . '/assets/js/main.min.js', array('jquery'), '3.3.5', true );
 	wp_enqueue_script( 'Isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd.js', array('jquery'), '3.3.5', true );
 	wp_enqueue_script( 'Isotope-pakery', get_template_directory_uri() . '/assets/js/packery-mode.pkgd.js', array('jquery'), '3.3.5', true );
+	wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery'), '3.3.5', true );
 	wp_enqueue_script( 'funcoes', get_template_directory_uri() . '/assets/js/funcoes.min.js', array('jquery'), '3.3.5', true );
 }
 

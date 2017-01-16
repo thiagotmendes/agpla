@@ -1,6 +1,10 @@
 <?php get_header() ?>
   <div class="wrapper-content">
     <div class="container-fluid">
+      <div class="row">
+        <?php echo do_shortcode('[rev_slider alias="home"]') ?>
+      </div>
+
       <div class="row grid">
         <?php
         $argsProjetos = array(
