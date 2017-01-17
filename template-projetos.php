@@ -4,7 +4,7 @@
   <div class="container-fluid">
     <h1><?php the_title() ?></h1>
     <div class="button-group filter-button-group">
-      <button data-filter="*" class="btn btn-projeto">show all</button>
+      <button data-filter="*" class="btn btn-projeto">Todos</button>
       <?php
       $termo = get_terms(
         array(
