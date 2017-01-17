@@ -1,7 +1,7 @@
 <?php get_header() ?>
   <div class="wrapper-content">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row conteudo-single">
         <?php if (have_posts()): ?>
           <?php while(have_posts()): the_post()  ?>
             <div class="col-md-7">

@@ -1,29 +1,19 @@
 <?php get_header() ?>
   <div class="wrapper-content">
     <div class="container-fluid">
-      <div class="row">
-        <?php echo do_shortcode('[rev_slider alias="home"]') ?>
-      </div>
-
       <div class="row grid">
         <?php
-        $argsProjetos = array(
-          'post_type' => 'projeto'
-        );
-        $projetoHome = new wp_query($argsProjetos);
-        if($projetoHome->have_posts()):
-          while($projetoHome->have_posts()): $projetoHome->the_post();
+        if(have_posts()):
+          while(have_posts()): the_post();
           ?>
-            <div class="col-md-4 grid-item">
+            <div class="col-md-12">
               <a href="<?php the_permalink() ?>">
                 <?php the_post_thumbnail( 'high', array( 'class' => 'img-responsive' ) ); ?>
               </a>
-              <div class="info" onclick="location.href='<?php the_permalink() ?>'">
-                <div class="info-table">
-                  <div class="info-table-cell">
-                      <h2 class="titulo-projeto"><?php the_title() ?></h2>
-                  </div>
-                </div>
+              <div class="conteudo-blog">
+                <h2><?php the_title() ?></h2>
+                <p><?php the_excerpt_limit(30) ?></p>
+                <a href="<?php the_permalink() ?>" class="btn btn-info">Leia Mais</a>
               </div>
             </div>
           <?php
