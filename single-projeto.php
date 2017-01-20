@@ -6,6 +6,13 @@
           <?php while(have_posts()): the_post()  ?>
             <div class="col-md-7">
               <?php
+              /* VIDEO */
+                while(have_rows('campo_de_videos')): the_row();
+                  echo '<div class="embed-responsive embed-responsive-16by9">';
+                    the_sub_field('videos');
+                  echo "</div>";
+                endwhile;
+                /* /VIDEO */
               $galeria = get_field('galeria');
               if(!empty($galeria)):
                 echo "<div class='galeria-single'>";
