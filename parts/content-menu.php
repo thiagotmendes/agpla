@@ -14,4 +14,12 @@
     );
     wp_nav_menu( $args );
   ?>
+  <div class="social">
+    <a href="https://www.facebook.com/ageplanpropagandaintegrada/?fref=ts" target="_blank">
+      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+    </a>
+    <a href="https://www.instagram.com/ageplanpropaganda/" target="_blank">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a>
+  </div>
 </div>
