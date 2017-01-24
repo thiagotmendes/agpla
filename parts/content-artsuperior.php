@@ -1,16 +1,9 @@
 <?php
-if (is_front_page()) {
   $argsProjetos = array(
     'post_type' => 'projeto',
-    'posts_per_page' => 6,
-    'offset' => -3
+    'posts_per_page' => 3
   );
-} else {
-  $argsProjetos = array(
-    'post_type' => 'projeto',
-    'posts_per_page' => 30
-  );
-}
+
 
 $projetoHome = new wp_query($argsProjetos);
 if($projetoHome->have_posts()):

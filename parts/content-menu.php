@@ -1,6 +1,6 @@
 <div class="logo">
   <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-    <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo.png" alt="<?php bloginfo() ?>">
+    <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo_site.png" alt="<?php bloginfo() ?>" class="img-responsive">
   </a>
 </div>
 
@@ -21,5 +21,10 @@
     <a href="https://www.instagram.com/ageplanpropaganda/" target="_blank">
       <i class="fa fa-instagram" aria-hidden="true"></i>
     </a>
+  </div>
+  <div class="endereco">
+    Rua Alagoas, 1314, conjunto 1308/1318 <br>
+    Savassi <br>
+    Belo Horizonte | MG
   </div>
 </div>
